@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AcademicYears>
+    <Year>
+        <YearID>1</YearID>
+        <YearName>Freshman</YearName>
+    </Year>
+    <Year>
+        <YearID>2</YearID>
+        <YearName>Sophomore</YearName>
+    </Year>
+    <Year>
+        <YearID>3</YearID>
+        <YearName>Junior</YearName>
+    </Year>
+    <Year>
+        <YearID>4</YearID>
+        <YearName>Senior</YearName>
+    </Year>
+</AcademicYears>

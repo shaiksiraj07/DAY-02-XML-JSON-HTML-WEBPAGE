@@ -1,0 +1,28 @@
+{
+  "studentYears": [
+    {
+      "studentId": "1254",
+      "yearId": "2021",
+      "status": "Enrolled",
+      "year": ""3
+    },
+    {
+      "studentId": "1209",
+      "yearId": "2022",
+      "status": "Enrolled",
+      "semester": "2"
+    },
+    {
+      "studentId": "1267",
+      "yearId": "2023",
+      "status": "Enrolled",
+      "semester": "1"
+    },
+    {
+      "studentId": "1223",
+      "yearId": "2020",
+      "status": "Enrolled",
+      "semester": "4"
+    }
+  ]
+}

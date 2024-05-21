@@ -1,0 +1,22 @@
+{
+  "departments": [
+    {
+      "departmentId": "CSE",
+      "departmentName": "Computer Science",
+      "departmentHead": "Dr.K.Rameshwaraih",
+      "building": "CSE Building"
+    },
+    {
+      "departmentId": "ME",
+      "departmentName": "Mechanical Engineering",
+      "departmentHead": "Dr.Janadrhan",
+      "building": "Mechanical  Building"
+    },
+    {
+      "departmentId": "ECE",
+      "departmentName": "Electronics & Electrical Engineering",
+      "departmentHead": "Dr.Ravi",
+      "building": "Electrical Engineering Building"
+    }
+  ]
+}

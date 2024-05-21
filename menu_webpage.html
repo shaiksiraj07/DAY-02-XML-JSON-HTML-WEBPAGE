@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <style>
+        body {
+            display: flex;
+        }
+        #menu {
+            width: 200px;
+            border-right: 1px solid #ccc;
+            padding: 20px;
+        }
+        #content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .menu-item {
+            margin: 10px 0;
+            cursor: pointer;
+            color: blue;
+        }
+        .menu-item:hover {
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div class="menu-item" onclick="showPage('login')">1.Login </div>
+        <div class="menu-item" onclick="showPage('user-creation')">2.User Creation</div>
+        <div class="menu-item" onclick="showPage('list-users')">3. List all Users</div>
+        <div class="menu-item" onclick="showPage('google-map')">4. Google Map</div>
+        <div class="menu-item" onclick="showPage('video')">5.Video </div>
+        <div class="menu-item" onclick="showPage('audio')">6. Audio </div>
+        <div class="menu-item" onclick="showPage('upload')">7.  upload a file</div>
+    </div>
+    <div id="content">
+        <div id="login" class="hidden">
+            <h2>Login Screen</h2>
+            <form>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div id="user-creation" class="hidden">
+            <h2>User Creation Screen</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male"> Male<br>
+                <input type="radio" id="female" name="gender" value="female"> Female<br>
+                <label for="country">Country:</label><br>
+                <select id="country" name="country">
+					<option value="usa">India</option>
+					<option value="usa">Austrlia</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                </select><br>
+                <label for="hobbies">Hobbies:</label><br>
+                <input type="checkbox" id="sports" name="hobbies" value="sports"> Sports<br>
+				 <input type="checkbox" id="reading books" name="hobbies" value="reading books"> Reading books<br>
+                <input type="checkbox" id="music" name="hobbies" value="music"> Music<br><br>
+                <input type="submit" value="Create User">
+            </form>
+        </div>
+        <div id="list-users" class="hidden">
+            <h2>List all Users</h2>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td> Shaik siraj</td>
+                    <td>sksiraj@gmail.com</td>
+                    <td>
+                        <button onclick="editUser()">Edit</button>
+                        <button onclick="deleteUser()">Delete</button>
+                    </td>
+                </tr>
+				 <tr>
+                    <td> P sujith</td>
+                    <td>psujith@gamil.com</td>
+                    <td>
+                        <button onclick="editUser()">Edit</button>
+                        <button onclick="deleteUser()">Delete</button>
+                    </td>
+                </tr>
+				 <tr>
+                    <td> M ganesh</td>
+                    <td>mganesh@gmail.com</td>
+                    <td>
+                        <button onclick="editUser()">Edit</button>
+                        <button onclick="deleteUser()">Delete</button>
+                    </td>
+                </tr>
+              
+            </table>
+        </div>
+        <div id="google-map" class="hidden">
+            <h2>Google Map</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509686!2d144.95373531531674!3d-37.81627977975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773ba49d98878e!2sFlinders%20Street%20Station!5e0!3m2!1sen!2sau!4v1620251092060!5m2!1sen!2sau width="600"
+                height="450"
+                frameborder="0" style="border:0"  allowfullscreen>
+            </iframe>
+        </div>
+        <div id="video" class="hidden">
+            <h2>Video File</h2>
+            <video width="320" height="240" controls>
+                <source src="C:\Users\sksir\OneDrive\Desktop\GEN-AI\video.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <div id="audio" class="hidden">
+            <h2>Audio File</h2>
+            <audio controls>
+                <source src="C:\Users\sksir\OneDrive\Desktop\GEN-AI\audio.mpeg" type="audio/mp3">
+               
+            </audio>
+        </div>
+        <div id="upload" class="hidden">
+            <h2>File Upload</h2>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" id="file"><br><br>
+                <input type="submit" value="Upload File">
+            </form>
+        </div>
+    </div>
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('#content > div');
+            pages.forEach(page => {
+                page.classList.add('hidden');
+            });
+            document.getElementById(pageId).classList.remove('hidden');
+        }
+
+        function editUser() {
+            alert('Edit user functionality to be implemented.');
+        }
+
+        function deleteUser() {
+            if (confirm('Are you sure do you want to delete?')) {
+                alert('User deleted.');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Departments>
+    <Department>
+        <DeptID>1</DeptID>
+        <DeptName>Computer Science</DeptName>
+        <Location>Building A</Location>
+    </Department>
+    <Department>
+        <DeptID>2</DeptID>
+        <DeptName>Electrical Engineering</DeptName>
+        <Location>Building B</Location>
+    </Department>
+    <Department>
+        <DeptID>3</DeptID>
+        <DeptName>Mechanical Engineering</DeptName>
+        <Location>Building C</Location>
+    </Department>
+</Departments>

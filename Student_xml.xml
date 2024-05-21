@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Student>
+    <StudentID>1254</StudentID>
+    <FirstName>shaik</FirstName>
+    <LastName>siraj</LastName>
+    <DateOfBirth>2003-09-10</DateOfBirth>
+    <Gender>Male</Gender>
+    <DepartmentID>D001</DepartmentID>
+    <YearEnrolled>2021</YearEnrolled>
+    <ContactEmail>sksiraj@gmail.com</ContactEmail>
+    <Courses>
+        <Course>
+            <CourseID>CSE101</CourseID>
+            <Name>Introduction to Computer Science</Name>
+            <Credits>4</Credits>
+        </Course>
+        <Course>
+            <CourseID>CSE102</CourseID>
+            <Name>Data Structures</Name>
+            <Credits>4</Credits>
+        </Course>
+    </Courses>
+</Student>

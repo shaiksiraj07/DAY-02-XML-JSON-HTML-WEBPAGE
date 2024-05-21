@@ -1,0 +1,29 @@
+{
+  "students": [
+    {
+      "studentId": "1254",
+      "firstName": "shaik",
+      "lastName": "siraj",
+      "dateOfBirth": "2003-09-10",
+      "departmentId": "CS",
+      "yearId": "2021"
+    },
+    {
+      "studentId": "1209",
+      "firstName": "Akshith",
+      "lastName": "ch",
+      "dateOfBirth": "2003-06-20",
+      "departmentId": "ME",
+      "yearId": "2022"
+    },
+    {
+      "studentId": "1267",
+      "firstName": "ramesh",
+      "lastName": "goud",
+      "dateOfBirth": "2003-11-30",
+      "departmentId": "ECE",
+      "yearId": "2023"
+    }
+  ]
+
+}
